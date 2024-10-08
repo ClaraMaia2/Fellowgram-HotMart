@@ -1,6 +1,6 @@
 # Fellowgram
 <div align="center">
-  <img width= "50%" src="https://github.com/ClaraMaia2/TimeToAnswer-Udemy/assets/102636646/b7b2e919-a276-4be6-8c59-f55883168e6c">
+  <img width= "50%" src="https://github.com/user-attachments/assets/132c04de-178a-4c00-80fa-e841fc145f84">
 </div>
 
 ## Index
