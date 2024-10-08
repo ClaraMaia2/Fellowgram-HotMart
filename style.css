@@ -211,6 +211,7 @@ footer a {
 
 .div-tag {
     font-weight: bold;
-    margin: 0 2.5%;
+    font-size: 12px;
+    margin: 0 3%;
     color: #8e8e8e;
 }
