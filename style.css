@@ -17,3 +17,71 @@ body {
     font-size: 14px;
     line-height: 18px;
 }
+
+#wrapper {
+    height: 100vh;
+}
+
+#container {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.left {
+    background-image: url("./assets/main-foto.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.right {
+    padding-left: 20px;
+}
+
+.login-panel {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-img {
+    width: 175px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"],input[type="text"] {
+    background-color: white;
+    border: 1px solid rgb(236, 234, 234);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder {
+    color: rgb(165, 164, 164);
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+    outline: 0;
+    border: 1px solid #a1a1a1;
+}
