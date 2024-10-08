@@ -120,12 +120,21 @@ input[type="submit"] {
     align-items: center;
 }
 
-.info-box p {
+.info-box p, .info-box p a{
     /*The user can't select this element*/
     user-select: none;
 }
 
-.info-box p a{
-    font-weight: bold;
-    user-select: none;
+.app-panel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.app-buttons {
+    margin-top: 16px;
+}
+
+.app-buttons img {
+    height: 40px;
+    padding: 0 2px;
 }
