@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
 
-    <title>Fellowgram - Your social network</title>
+    <title>Sign up - Fellowgram</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,35 +12,45 @@
     <div id="wrapper">
 
         <!-- BEGINNING OF CONTAINER AREA -->
-        <div id="container">
+        <div id="container-register">
 
-            <!-- BEGINNING OF THE WEBSITE'S LEFT COLUMN -->
-            <div class="column left">
-                <div class="main"></div>
-            </div>
-            <!-- ENDING OF THE WEBSITE'S LEFT COLUMN -->
-
-            <!-- BEGINNING OF THE WEBSITE'S RIGHT COLUMN -->
-            <div class="column right">
-                <!-- BEGINNING OF LOGIN PANEL -->
+            <!-- BEGINNING OF THE WEBSITE'S COLUMN -->
+            <div class="column">
+                <!-- BEGINNING OF REGISTER PANEL -->
                 <div class="login-panel">
                     <div class="logo">
                         <!-- TODO: CHANGE THIS LOGO FOR ONE SAYING "FELLOWGRAM" -->
                         <img class="logo-img" src="assets/logo.png" alt="Fellowgram's logo">
                     </div>
 
+                    <div class="message">
+                        <span>Sign up to see photos and videos from your friends.</span>
+                    </div>
+
+                    <button class="cta-button">
+                        Continue with Facebook
+                    </button>
+
+                    <div class="div-container">
+                        <div class="line"></div>
+                        <div class="div-tag">OR</div>
+                        <div class="line"></div>
+                    </div>
+
                     <form action="">
-                        <input type="text" placeholder="Phone, user or email" name="username">
+                        <input type="text" placeholder="Mobile number or email" name="numberoremail">
+                        <input type="text" placeholder="Full name" name="name">
+                        <input type="text" placeholder="Username" name="username">
                         <input type="password" placeholder="Password" name="password">
 
-                        <input type="submit" value="Log in">
+                        <input type="submit" value="Sign up">
                     </form>
                 </div>
-                <!-- ENDING OF LOGIN PANEL -->
+                <!-- ENDING OF REGISTER PANEL -->
 
                 <!-- BEGINNING OF REGISTER BOX -->
                 <div class="info-box">
-                    <p>Don't have an account? <a href="register.html">Sign up</a></p>
+                    <p>Have an account? <a href="index.html">Log in</a></p>
                 </div>
                 <!-- ENDING OF REGISTER BOX -->
 
@@ -59,7 +69,7 @@
                 </div>
                 <!-- ENDING OF THE APP PANEL -->
             </div>
-            <!-- ENDING OF THE WEBSITE'S RIGHT COLUMN -->
+            <!-- ENDING OF THE WEBSITE'S COLUMN -->
         </div>
         <!-- ENDING OF CONTAINER AREA -->
     </div>

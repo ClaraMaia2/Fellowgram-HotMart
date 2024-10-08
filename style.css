@@ -60,6 +60,7 @@ body {
 }
 
 form {
+    /*Centering content*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,4 +85,133 @@ input[type="password"]::placeholder, input[type="text"]::placeholder {
 input[type="password"]:focus, input[type="text"]:focus {
     outline: 0;
     border: 1px solid #a1a1a1;
+}
+
+input[type="submit"] {
+    width: 320px;
+    margin-top: 10px;
+    height: 30px;
+    border: 0;
+    background-color: #3c96ed;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    /*When hovering or clicking on this element, the mouse cursor changes to a pointer*/
+    cursor: pointer;
+}
+
+.info-box {
+    background-color: white;
+    border: 1px solid rgb(236, 234, 234);
+    height: 60px;
+
+    /*10px = top margin
+    auto = left and right margins
+    0 = bottom margin
+    */
+    margin: 10px auto 0;
+
+    /*Centering content*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box p, .info-box p a{
+    /*The user can't select this element*/
+    user-select: none;
+}
+
+.app-panel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.app-buttons {
+    margin-top: 16px;
+}
+
+.app-buttons img {
+    height: 40px;
+    padding: 0 2px;
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    margin-top: -30px;
+}
+
+footer a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+/*REGISTER PAGE*/
+#container-register {
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    margin: 10px 70px;
+}
+
+.message span {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    /*Height between lines*/
+    line-height: 20px;
+    color: #8e8e8e;
+}
+
+.cta-button {
+    width: 320px;
+    margin: 10px 0;
+    height: 35px;
+    background-color: #0095f6;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line {
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 35%;
+}
+
+.div-tag {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 3%;
+    color: #8e8e8e;
 }
