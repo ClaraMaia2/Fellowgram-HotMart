@@ -5,12 +5,18 @@
 }
 
 a {
-    color: #3c96ed;
+    color: var(--primary-button);
     text-decoration: none;
 }
 
 body {
-    background: #fafafa;
+    --background: #fafafa;
+    --white: white;
+    --black: black;
+    --primary-button: #0095f6;
+    --primary-border: #e6e6e6;
+
+    background: var(--background);
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -49,8 +55,8 @@ body {
 }
 
 .login-panel {
-    background-color: white;
-    border: 1px solid #e6e6e6;
+    background-color: var(--white);
+    border: 1px solid var(--primary-border);
     text-align: center;
     padding: 20px 0;
 }
@@ -68,7 +74,7 @@ form {
 }
 
 input[type="password"],input[type="text"] {
-    background-color: white;
+    background-color: var(--white);
     border: 1px solid rgb(236, 234, 234);
     height: 40px;
     border-radius: 4px;
@@ -92,9 +98,9 @@ input[type="submit"] {
     margin-top: 10px;
     height: 30px;
     border: 0;
-    background-color: #3c96ed;
+    background-color: var(--primary-button);
     border-radius: 4px;
-    color: white;
+    color: var(--white);
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -104,7 +110,7 @@ input[type="submit"] {
 }
 
 .info-box {
-    background-color: white;
+    background-color: var(--white);
     border: 1px solid rgb(236, 234, 234);
     height: 60px;
 
@@ -146,7 +152,7 @@ footer {
 }
 
 footer a {
-    color: black;
+    color: var(--black);
     text-transform: uppercase;
     font-weight: bold;
     margin-right: 8px;
@@ -187,8 +193,8 @@ footer a {
     width: 320px;
     margin: 10px 0;
     height: 35px;
-    background-color: #0095f6;
-    color: white;
+    background-color: var(--primary-button);
+    color: var(--white);
     border: 0;
     border-radius: 4px;
     font-size: 14px;
@@ -205,7 +211,7 @@ footer a {
 
 .line {
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: var(--primary-border);
     width: 35%;
 }
 
