@@ -5,15 +5,256 @@
 }
 
 a {
-    color: #3c96ed;
+    color: var(--primary-button);
     text-decoration: none;
 }
 
 body {
-    background: #fafafa;
+    --background: #fafafa;
+    --white: white;
+    --black: black;
+    --primary-button: #0095f6;
+    --primary-border: #e6e6e6;
+
+    background: var(--background);
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 18px;
+}
+
+#wrapper {
+    height: 100vh;
+}
+
+#container {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.left {
+    background-image: url("./assets/main-foto.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.right {
+    padding-left: 20px;
+}
+
+.login-panel {
+    background-color: var(--white);
+    border: 1px solid var(--primary-border);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-img {
+    width: 175px;
+}
+
+form {
+    /*Centering content*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"],input[type="text"] {
+    background-color: var(--white);
+    border: 1px solid rgb(236, 234, 234);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder {
+    color: rgb(165, 164, 164);
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+    outline: 0;
+    border: 1px solid #a1a1a1;
+}
+
+input[type="submit"] {
+    width: 320px;
+    margin-top: 10px;
+    height: 30px;
+    border: 0;
+    background-color: var(--primary-button);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    /*When hovering or clicking on this element, the mouse cursor changes to a pointer*/
+    cursor: pointer;
+}
+
+.info-box {
+    background-color: var(--white);
+    border: 1px solid rgb(236, 234, 234);
+    height: 60px;
+
+    /*10px = top margin
+    auto = left and right margins
+    0 = bottom margin
+    */
+    margin: 10px auto 0;
+
+    /*Centering content*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box p, .info-box p a{
+    /*The user can't select this element*/
+    user-select: none;
+}
+
+.app-panel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.app-buttons {
+    margin-top: 16px;
+}
+
+.app-buttons img {
+    height: 40px;
+    padding: 0 2px;
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    margin-top: -30px;
+}
+
+footer a {
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+/*REGISTER PAGE*/
+#container-register {
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    margin: 10px 70px;
+}
+
+.message span {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    /*Height between lines*/
+    line-height: 20px;
+    color: #8e8e8e;
+}
+
+.cta-button {
+    width: 320px;
+    margin: 10px 0;
+    height: 35px;
+    background-color: var(--primary-button);
+    color: var(--white);
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line {
+    height: 1px;
+    background-color: var(--primary-border);
+    width: 35%;
+}
+
+.div-tag {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 3%;
+    color: #8e8e8e;
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 850px) {
+    .left {
+        display: none;
+    }
+
+    #container {
+        width: 70%;
+    }
+
+    .right {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 560px) {
+    #container {
+        width: 90%;
+    }
+
+    #container-register {
+        width: 90%;
+    }
+
+    input[type="password"], input[type="text"], input[type="submit"] {
+        width: 85%;
+    }
+
+    .cta-button {
+        width: 85%;
+    }
+
+    .message {
+        margin: 10px 25px;
+    }
 }
