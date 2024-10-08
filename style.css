@@ -215,3 +215,40 @@ footer a {
     margin: 0 3%;
     color: #8e8e8e;
 }
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 850px) {
+    .left {
+        display: none;
+    }
+
+    #container {
+        width: 70%;
+    }
+
+    .right {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 560px) {
+    #container {
+        width: 90%;
+    }
+
+    #container-register {
+        width: 90%;
+    }
+
+    input[type="password"], input[type="text"], input[type="submit"] {
+        width: 85%;
+    }
+
+    .cta-button {
+        width: 85%;
+    }
+
+    .message {
+        margin: 10px 25px;
+    }
+}
