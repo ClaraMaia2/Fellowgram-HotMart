@@ -19,3 +19,11 @@ Follow [this link](https://github.com/ClaraMaia2/Fellowgram-HotMart.git) to acce
 ## 🏃Running
 
 To run this application, open the index page (index.html) on your browser.
+
+## 📜 License
+
+This project is for learning purposes only and is not intended for production use. Feel free to explore and learn from it!
+
+## ⭐ If you found this project helpful, consider giving it a star!
+
+<br>
